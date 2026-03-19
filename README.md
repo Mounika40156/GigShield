@@ -160,7 +160,7 @@ and loses ₹400 due to heavy rain → ₹400 is credited instantly
 
 ---
 
-### ✅ Key Benefits
+### Key Benefits
 
 - No manual claim filing  
 - No approval delays  
