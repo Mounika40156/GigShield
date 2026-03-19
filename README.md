@@ -4,14 +4,11 @@
 
 GigShield is an AI-powered parametric insurance platform that protects gig delivery workers from income loss caused by environmental disruptions such as heavy rain, heatwaves, flooding, and air pollution.
 
----
 
 ## 🎥 Demo
 
 - Demo Video: [https://youtu.be/s2i6chsLJAo]  
 
-
----
 
 ## The Problem
 
@@ -27,7 +24,6 @@ can reduce deliveries and lead to **20–30% loss in weekly income**.
 
 Currently, there is **no simple and automated financial protection system** designed specifically for them.
 
----
 
 ## Our Solution
 
@@ -42,7 +38,6 @@ Instead of manual claims:
 2) No claim process  
 3) Instant compensation  
 
----
 
 ## Real-World Scenario
 
@@ -60,7 +55,6 @@ One afternoon, heavy rainfall continues for several hours, flooding roads and re
 - Disruption trigger activates automatically  
 - Compensation is credited instantly  
 
----
 
 ## How It Works
 
@@ -82,7 +76,6 @@ Food delivery partners working with platforms like Swiggy and Zomato.
 
 GigShield provides a financial safety net for such workers.
 
----
 
 ## Key Features
 
@@ -93,7 +86,6 @@ GigShield provides a financial safety net for such workers.
 - 🔐 Fraud Detection System  
 - 📊 Earnings Loss Estimator  
 
----
 
 ## Pricing Model
 
@@ -103,7 +95,6 @@ GigShield provides a financial safety net for such workers.
 | Standard | ₹99          | ₹3000            |
 | Premium  | ₹149         | ₹5000            |
 
----
 
 ## Parametric Triggers
 
@@ -114,7 +105,6 @@ GigShield provides a financial safety net for such workers.
 | 🌫️ Pollution  | AQI > 400 |
 | 🌊 Flood Alert | Government warning |
 
----
 
 ## Ensuring Genuine Users (Fraud Prevention)
 
@@ -126,7 +116,6 @@ GigShield uses a **multi-layer verification system**:
 - AI-based anomaly detection  
 - Behavior analysis (activity & usage patterns)  
 
----
 
 ## Detailed Application Workflow
 
@@ -139,7 +128,7 @@ GigShield uses a **multi-layer verification system**:
 7. Automatic Payout Processing  
 8. User Notification  
 
----
+
 
 ## AI Integration
 
@@ -148,13 +137,13 @@ Machine learning is used to:
 - Estimate income loss  
 - Detect fraudulent claims  
 
----
+
 
 ## 🛠️ Tech Stack
 
 React.js, Tailwind CSS, Node.js, Express.js, MongoDB, Python, Scikit-learn, Weather API, AQI API, Maps API, Razorpay
 
----
+
 
 ## Future Enhancements
 
@@ -164,7 +153,7 @@ React.js, Tailwind CSS, Node.js, Express.js, MongoDB, Python, Scikit-learn, Weat
 - Advanced AI predictions  
 - Personalized insurance plans  
 
----
+
 
 ## 👥 Developed By – Team "The GameChangers"
 
