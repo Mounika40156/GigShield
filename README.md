@@ -101,9 +101,9 @@ This helps the platform calculate fair compensation payouts automatically.
 
 | Plan     | Weekly Premium | Maximum Weekly Payout |
 |----------|---------------|----------------------|
-| Basic    | ₹30           | ₹800                 |
-| Standard | ₹50           | ₹1500                |
-| Premium  | ₹70           | ₹2500                |
+| Basic    | ₹49           | ₹1500                |
+| Standard | ₹99           | ₹3000                |
+| Premium  | ₹149          | ₹5000                |
 
 Workers can select a plan based on their expected weekly income.
 
