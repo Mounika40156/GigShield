@@ -1,16 +1,18 @@
-# GigShield – AI-Powered Insurance for Gig Delivery Workers
+# 🚀 GigShield – AI-Powered Insurance for Gig Delivery Workers
 
 *"We don't ask workers to prove their loss — the data proves it."*
 
 GigShield is an AI-powered parametric insurance platform that protects gig delivery workers from income loss caused by environmental disruptions such as heavy rain, heatwaves, flooding, and air pollution.
 
+---
 
 ## 🎥 Demo
 
-- Demo Video: [https://youtu.be/s2i6chsLJAo]  
+- Demo Video: https://youtu.be/s2i6chsLJAo  
 
+---
 
-## The Problem
+## 🚨 The Problem
 
 Gig delivery workers working with platforms like Swiggy and Zomato depend entirely on daily earnings.
 
@@ -24,8 +26,36 @@ can reduce deliveries and lead to **20–30% loss in weekly income**.
 
 Currently, there is **no simple and automated financial protection system** designed specifically for them.
 
+---
 
-## Our Solution
+## 📊 Gig Worker Income Insights (India)
+
+A delivery worker in India typically earns around **₹1,000 per day** based on 8–10 hours of work.
+
+### 💰 Income Breakdown
+
+- **Monthly Earnings:** ₹21,000 – ₹30,000  
+- **Daily Earnings:** ₹700 – ₹1,000  
+- **Per Delivery:** ₹40 – ₹80  
+
+### ⛽ Expenses
+
+- Daily fuel cost: ₹350 – ₹400  
+
+👉 This significantly reduces net income.
+
+### ⚠️ Key Insight
+
+Gig workers depend heavily on:
+- Daily orders  
+- Incentives  
+- External conditions  
+
+Even a few hours of disruption can reduce income by **50% or more**.
+
+---
+
+## 💡 Our Solution
 
 GigShield provides a **parametric insurance system** that offers automatic income protection.
 
@@ -34,29 +64,31 @@ Instead of manual claims:
 - Detects disruptions using predefined thresholds  
 - Automatically triggers payouts  
 
-1) No paperwork  
-2) No claim process  
-3) Instant compensation  
+✅ No paperwork  
+✅ No claim process  
+✅ Instant compensation  
 
+---
 
-## Real-World Scenario
+## 🌍 Real-World Scenario
 
 Arjun, a delivery partner, earns around ₹700 per day.
 
 One afternoon, heavy rainfall continues for several hours, flooding roads and reducing delivery demand.
 
- **Without GigShield**:
-- Ravi waits for hours with no orders  
+**❌ Without GigShield:**
+- Arjun waits for hours with no orders  
 - Misses daily incentives  
 - Earnings drop from ₹700 to ₹300  
 
- **With GigShield**:
+**✅ With GigShield:**
 - System detects rainfall > 60 mm  
 - Disruption trigger activates automatically  
 - Compensation is credited instantly  
 
+---
 
-## How It Works
+## ⚙️ How It Works
 
 1. User registers on the platform  
 2. AI assesses risk based on location and conditions  
@@ -66,7 +98,7 @@ One afternoon, heavy rainfall continues for several hours, flooding roads and re
 
 ---
 
-## Target Users
+## 👤 Target Users
 
 Food delivery partners working with platforms like Swiggy and Zomato.
 
@@ -76,8 +108,9 @@ Food delivery partners working with platforms like Swiggy and Zomato.
 
 GigShield provides a financial safety net for such workers.
 
+---
 
-## Key Features
+## ⭐ Key Features
 
 - 📅 Weekly Insurance Plans  
 - 🤖 AI-Based Risk Assessment  
@@ -86,17 +119,19 @@ GigShield provides a financial safety net for such workers.
 - 🔐 Fraud Detection System  
 - 📊 Earnings Loss Estimator  
 
+---
 
-## Pricing Model
+## 💰 Pricing Model
 
 | Plan     | Weekly Premium | Max Weekly Payout |
-|----------|--------------|------------------|
-| Basic    | ₹49          | ₹1500            |
-| Standard | ₹99          | ₹3000            |
-| Premium  | ₹149         | ₹5000            |
+|----------|---------------|------------------|
+| Basic    | ₹49           | ₹1500            |
+| Standard | ₹99           | ₹3000            |
+| Premium  | ₹149          | ₹5000            |
 
+---
 
-## Parametric Triggers
+## ⚡ Parametric Triggers
 
 | Disruption Type | Condition |
 |----------------|----------|
@@ -105,8 +140,9 @@ GigShield provides a financial safety net for such workers.
 | 🌫️ Pollution  | AQI > 400 |
 | 🌊 Flood Alert | Government warning |
 
+---
 
-## Ensuring Genuine Users (Fraud Prevention)
+## 🔐 Ensuring Genuine Users (Fraud Prevention)
 
 GigShield uses a **multi-layer verification system**:
 
@@ -114,13 +150,14 @@ GigShield uses a **multi-layer verification system**:
 - GPS-based location validation  
 - Device tracking (one account per device)  
 - AI-based anomaly detection  
-- Behavior analysis (activity & usage patterns)  
+- Behavior analysis (activity patterns)  
 
+---
 
-## Detailed Application Workflow
+## ⚙️ Detailed Application Workflow
 
 1. User Registration (OTP + basic details)  
-2. AI Risk Assessment (location + weather data)  
+2. AI Risk Assessment (location + environmental data)  
 3. Plan Selection & Payment (Razorpay)  
 4. Real-Time Monitoring (Weather & AQI APIs)  
 5. Disruption Detection (threshold-based triggers)  
@@ -128,32 +165,53 @@ GigShield uses a **multi-layer verification system**:
 7. Automatic Payout Processing  
 8. User Notification  
 
+---
 
-
-## AI Integration
+## 🤖 AI Integration
 
 Machine learning is used to:
 - Assess risk levels  
 - Estimate income loss  
 - Detect fraudulent claims  
 
+---
 
+## 🛠️ Tech Stack (Detailed)
 
-## 🛠️ Tech Stack
+### 🎨 Frontend
+- **React.js** – Builds UI for registration, plan selection, and dashboard  
+- **Tailwind CSS** – Provides responsive and clean design  
 
-React.js, Tailwind CSS, Node.js, Express.js, MongoDB, Python, Scikit-learn, Weather API, AQI API, Maps API, Razorpay
+### ⚙️ Backend
+- **Node.js** – Handles server-side logic  
+- **Express.js** – Creates APIs for user, plans, triggers, and payouts  
 
+### 🤖 AI / Machine Learning
+- **Python** – Implements ML models  
+- **Scikit-learn** – Used for risk assessment and fraud detection  
 
+### 🗄️ Database
+- **MongoDB** – Stores users, plans, transactions, and payouts  
 
-## Future Enhancements
+### 🌐 External APIs
+- **Weather API** – Rainfall & temperature data  
+- **AQI API** – Air quality monitoring  
+- **Maps API** – Location validation  
 
-- Integration with delivery platforms  
-- Mobile application  
-- Real-time dashboards  
-- Advanced AI predictions  
+### 💳 Payment Integration
+- **Razorpay** – Handles premium payments and payout simulation  
+
+---
+
+## 🚀 Future Enhancements
+
+- Integration with delivery platforms (to verify users)  
+- Mobile application for better accessibility  
+- Real-time dashboards for monitoring  
+- Advanced AI models for prediction  
 - Personalized insurance plans  
 
-
+---
 
 ## 👥 Developed By – Team "The GameChangers"
 
