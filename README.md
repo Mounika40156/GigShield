@@ -1,196 +1,172 @@
-AI-Powered Parametric Insurance Platform for Gig Delivery Workers
-=================================================================
+# 🚀 GigShield – AI-Powered Insurance for Gig Delivery Workers
 
-Project Overview
-----------------
+*"We don't ask workers to prove their loss — the data proves it."*
 
-Gig economy delivery partners working for platforms such as Swiggy and Zomato form the backbone of the modern digital delivery ecosystem. These workers depend on daily deliveries for their earnings.
+GigShield is an AI-powered parametric insurance platform that protects gig delivery workers from income loss caused by environmental disruptions such as heavy rain, heatwaves, flooding, and air pollution.
 
-However, external disruptions such as **heavy rainfall, extreme heat, flooding, or severe pollution** can reduce deliveries and cause workers to lose a significant portion of their weekly income.
+---
 
-This project proposes an **AI-powered parametric insurance platform** designed specifically to protect gig delivery workers from income loss caused by such external disruptions.
+## 🎥 Demo
 
-The platform uses **real-time environmental data and AI-based risk assessment** to automatically detect disruptions and trigger compensation payouts.
+- Demo Video: [https://youtu.be/s2i6chsLJAo]  
 
-Problem Statement
-=================
 
-Delivery partners in the gig economy often experience income instability due to external environmental conditions.
+---
 
-Common disruption scenarios include:
+## 🚨 The Problem
 
-*   Heavy rainfall stopping deliveries
-    
-*   Heatwaves making outdoor work unsafe
-    
-*   Flooded streets blocking delivery routes
-    
-*   High air pollution reducing outdoor activity
-    
+Gig delivery workers working with platforms like Swiggy and Zomato depend entirely on daily earnings.
 
-In these situations, delivery partners can lose **20–30% of their weekly earnings**, and currently there is **no simple income protection system** designed specifically for them.
+However, external disruptions such as:
+- Heavy rainfall  
+- Heatwaves  
+- Flooding  
+- Severe air pollution  
 
-Target Persona
-==============
+can reduce deliveries and lead to **20–30% loss in weekly income**.
 
-The primary users of this platform are **food delivery partners** working for companies such as Swiggy and Zomato.
+Currently, there is **no simple and automated financial protection system** designed specifically for them.
 
-### Example Persona
+---
 
-A delivery partner earns approximately **₹600–₹800 per day**.
+## 💡 Our Solution
 
-During extreme weather conditions such as heavy rain or severe pollution, delivery demand drops and the worker may lose **₹1000–₹1500 in weekly income**.
+GigShield provides a **parametric insurance system** that offers automatic income protection.
 
-Our platform provides a financial safety net for such situations.
+Instead of manual claims:
+- The system monitors real-time environmental data  
+- Detects disruptions using predefined thresholds  
+- Automatically triggers payouts  
 
-Proposed Solution
-=================
+✅ No paperwork  
+✅ No claim process  
+✅ Instant compensation  
 
-We propose a **parametric insurance system** that offers weekly income protection for gig workers.
+---
 
-Key idea:
+## 🌍 Real-World Scenario
 
-Instead of manual claims, the system automatically detects disruptions using external data sources and triggers payouts when predefined conditions are met.
+Ravi, a delivery partner, earns around ₹700 per day.
 
-### Core Components
+One afternoon, heavy rainfall continues for several hours, flooding roads and reducing delivery demand.
 
-*   AI-powered risk assessment
-    
-*   Weekly insurance plans
-    
-*   Real-time disruption monitoring
-    
-*   Automated claim triggering
-    
-*   Instant payout processing
-    
-*   Fraud detection mechanisms
-    
+❌ Without GigShield:
+- Ravi waits for hours with no orders  
+- Misses daily incentives  
+- Earnings drop from ₹700 to ₹300  
 
-This ensures **fast, transparent, and reliable financial protection** for gig workers.
+✅ With GigShield:
+- System detects rainfall > 60 mm  
+- Disruption trigger activates automatically  
+- Compensation is credited instantly  
 
-Key Features
-============
+---
 
-### Weekly Insurance Plans
+## ⚙️ How It Works
 
-Affordable insurance plans designed to match the weekly earning cycle of gig workers.
+1. User registers on the platform  
+2. AI assesses risk based on location and conditions  
+3. User selects a weekly insurance plan  
+4. System monitors real-time environmental data  
+5. If disruption occurs → payout is triggered automatically  
 
-### AI Risk Assessment
+---
 
-Machine learning models analyze environmental data and historical disruptions to determine risk levels.
+## 👤 Target Users
 
-### Parametric Triggers
+Food delivery partners working with platforms like Swiggy and Zomato.
 
-Automatic payout triggers based on real-time external conditions.
+**Example:**
+- Daily income: ₹600–₹800  
+- Weekly loss during disruptions: ₹1000–₹1500  
 
-### Fraud Detection
+GigShield provides a financial safety net for such workers.
 
-AI models detect anomalies such as location mismatches or suspicious claim patterns.
+---
 
-### Automatic Payouts
+## ⭐ Key Features
 
-When disruption thresholds are reached, compensation is processed instantly.
-### Earnings Loss Estimator
+- 📅 Weekly Insurance Plans  
+- 🤖 AI-Based Risk Assessment  
+- 🌦️ Real-Time Weather & AQI Monitoring  
+- ⚡ Automatic Payout Triggering  
+- 🔐 Fraud Detection System  
+- 📊 Earnings Loss Estimator  
 
-The system estimates the income loss of delivery workers during disruption events by comparing normal delivery activity with current environmental conditions.
+---
 
-This helps the platform calculate fair compensation payouts automatically.
+## 💰 Pricing Model
 
-## Weekly Pricing Model
+| Plan     | Weekly Premium | Max Weekly Payout |
+|----------|--------------|------------------|
+| Basic    | ₹49          | ₹1500            |
+| Standard | ₹99          | ₹3000            |
+| Premium  | ₹149         | ₹5000            |
 
-| Plan     | Weekly Premium | Maximum Weekly Payout |
-|----------|---------------|----------------------|
-| Basic    | ₹49           | ₹1500                |
-| Standard | ₹99           | ₹3000                |
-| Premium  | ₹149          | ₹5000                |
+---
 
-Workers can select a plan based on their expected weekly income.
+## ⚡ Parametric Triggers
 
-Parametric Disruption Triggers
-==============================
+| Disruption Type | Condition |
+|----------------|----------|
+| 🌧️ Heavy Rain  | Rainfall > 60 mm |
+| 🌡️ Heatwave   | Temperature > 45°C |
+| 🌫️ Pollution  | AQI > 400 |
+| 🌊 Flood Alert | Government warning |
 
-Disruption TypeTrigger ConditionHeavy RainRainfall greater than 60 mmHeatwaveTemperature above 45°CSevere PollutionAQI above 400Flood WarningOfficial government disaster alert
+---
 
-When these thresholds are reached, the system automatically triggers a payout.
+## 🔐 Ensuring Genuine Users (Fraud Prevention)
 
-## Application Workflow
+GigShield uses a **multi-layer verification system**:
 
-1. Delivery Partner Registration  
-2. AI-Based Risk Assessment  
-3. Weekly Insurance Plan Selection  
-4. Real-Time Monitoring of Environmental Data  
-5. Disruption Trigger Detection  
-6. Automatic Payout Processing
+- OTP-based user authentication  
+- GPS-based location validation  
+- Device tracking (one account per device)  
+- AI-based anomaly detection  
+- Behavior analysis (activity & usage patterns)  
 
-## Technology Stack
+---
 
-### Frontend
+## ⚙️ Detailed Application Workflow
 
-*   React.js
-    
-*   Tailwind CSS
-    
+1. User Registration (OTP + basic details)  
+2. AI Risk Assessment (location + weather data)  
+3. Plan Selection & Payment (Razorpay)  
+4. Real-Time Monitoring (Weather & AQI APIs)  
+5. Disruption Detection (threshold-based triggers)  
+6. Fraud Check (AI validation)  
+7. Automatic Payout Processing  
+8. User Notification  
 
-### Backend
+---
 
-*   Node.js
-    
-*   Express.js
-    
+## 🤖 AI Integration
 
-### AI / Machine Learning
+Machine learning is used to:
+- Assess risk levels  
+- Estimate income loss  
+- Detect fraudulent claims  
 
-*   Python
-    
-*   Scikit-learn
-    
+---
 
-### Database
+## 🛠️ Tech Stack
 
-*   MongoDB
-    
+React.js, Tailwind CSS, Node.js, Express.js, MongoDB, Python, Scikit-learn, Weather API, AQI API, Maps API, Razorpay
 
-### External APIs
+---
 
-*   Weather API
-    
-*   Air Quality (AQI) API
-    
-*   Maps API
-    
+## 🚀 Future Enhancements
 
-### Payment Integration
+- Integration with delivery platforms  
+- Mobile application  
+- Real-time dashboards  
+- Advanced AI predictions  
+- Personalized insurance plans  
 
-*   Razorpay (sandbox environment) 
-
-
-Future Enhancements
-===================
-
-*   Integration with delivery platforms
-    
-*   Real-time risk dashboards
-    
-*   Mobile application for gig workers
-    
-*   AI-based disruption prediction
-    
-*   Personalized insurance plans
-    
-
-Conclusion
-==========
-
-This project aims to provide **a reliable income protection system for gig delivery workers** affected by environmental disruptions.
-By combining **AI-driven risk modeling, parametric insurance triggers, and automated payouts**, the platform ensures that gig workers receive timely financial support during unforeseen events.
-
-
-
+---
 
 ## 👥 Developed By – Team "The GameChangers"
-
-### Team Members
 
 - **T. Mounika** (ID: 2300040156)  
 - **Md. Karishma** (ID: 2300040100)  
