@@ -185,3 +185,13 @@ Conclusion
 This project aims to provide **a reliable income protection system for gig delivery workers** affected by environmental disruptions.
 By combining **AI-driven risk modeling, parametric insurance triggers, and automated payouts**, the platform ensures that gig workers receive timely financial support during unforeseen events.
 
+
+
+
+Team Name: The GameChangers
+Team Members:
+T. Mounika(2300040156)
+Md. Karishma(2300040100)
+B. Kamal Nadh(2300040372)
+D. Abhilash Manikanta(2300040372)
+
