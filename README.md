@@ -33,7 +33,7 @@ A delivery worker in India typically earns around **₹1,000 per day** based on 
 
 ### 💰 Income Breakdown
 
-- **Monthly Earnings:** ₹21,000 – ₹30,000  
+- **Monthly Earnings:** ₹15,000 – ₹30,000(Full time worker)
 - **Daily Earnings:** ₹700 – ₹1,000  
 - **Per Delivery:** ₹40 – ₹80  
 
