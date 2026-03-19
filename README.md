@@ -188,10 +188,11 @@ By combining **AI-driven risk modeling, parametric insurance triggers, and autom
 
 
 
-Team Name: The GameChangers
-Team Members:
-T. Mounika(2300040156)
-Md. Karishma(2300040100)
-B. Kamal Nadh(2300040372)
-D. Abhilash Manikanta(2300040372)
+## 👥 Developed By – Team "The GameChangers"
 
+### Team Members
+
+- **T. Mounika** (ID: 2300040156)  
+- **Md. Karishma** (ID: 2300040100)  
+- **B. Kamal Nadh** (ID: 2300040372)  
+- **D. Abhilash Manikanta** (ID: 2300040372)  
