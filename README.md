@@ -10,7 +10,6 @@ GigShield is an AI-powered parametric insurance platform that protects gig deliv
 
 - Demo Video: https://youtu.be/s2i6chsLJAo  
 
----
 
 ## 🚨 The Problem
 
