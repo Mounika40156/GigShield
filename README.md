@@ -1,4 +1,4 @@
-# 🚀 GigShield – AI-Powered Insurance for Gig Delivery Workers
+# GigShield – AI-Powered Insurance for Gig Delivery Workers
 
 *"We don't ask workers to prove their loss — the data proves it."*
 
@@ -13,7 +13,7 @@ GigShield is an AI-powered parametric insurance platform that protects gig deliv
 
 ---
 
-## 🚨 The Problem
+## The Problem
 
 Gig delivery workers working with platforms like Swiggy and Zomato depend entirely on daily earnings.
 
@@ -29,7 +29,7 @@ Currently, there is **no simple and automated financial protection system** desi
 
 ---
 
-## 💡 Our Solution
+## Our Solution
 
 GigShield provides a **parametric insurance system** that offers automatic income protection.
 
@@ -38,31 +38,31 @@ Instead of manual claims:
 - Detects disruptions using predefined thresholds  
 - Automatically triggers payouts  
 
-✅ No paperwork  
-✅ No claim process  
-✅ Instant compensation  
+1) No paperwork  
+2) No claim process  
+3) Instant compensation  
 
 ---
 
-## 🌍 Real-World Scenario
+## Real-World Scenario
 
-Ravi, a delivery partner, earns around ₹700 per day.
+Arjun, a delivery partner, earns around ₹700 per day.
 
 One afternoon, heavy rainfall continues for several hours, flooding roads and reducing delivery demand.
 
-❌ Without GigShield:
+ **Without GigShield**:
 - Ravi waits for hours with no orders  
 - Misses daily incentives  
 - Earnings drop from ₹700 to ₹300  
 
-✅ With GigShield:
+ **With GigShield**:
 - System detects rainfall > 60 mm  
 - Disruption trigger activates automatically  
 - Compensation is credited instantly  
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 1. User registers on the platform  
 2. AI assesses risk based on location and conditions  
@@ -72,7 +72,7 @@ One afternoon, heavy rainfall continues for several hours, flooding roads and re
 
 ---
 
-## 👤 Target Users
+## Target Users
 
 Food delivery partners working with platforms like Swiggy and Zomato.
 
@@ -84,7 +84,7 @@ GigShield provides a financial safety net for such workers.
 
 ---
 
-## ⭐ Key Features
+## Key Features
 
 - 📅 Weekly Insurance Plans  
 - 🤖 AI-Based Risk Assessment  
@@ -95,7 +95,7 @@ GigShield provides a financial safety net for such workers.
 
 ---
 
-## 💰 Pricing Model
+## Pricing Model
 
 | Plan     | Weekly Premium | Max Weekly Payout |
 |----------|--------------|------------------|
@@ -105,7 +105,7 @@ GigShield provides a financial safety net for such workers.
 
 ---
 
-## ⚡ Parametric Triggers
+## Parametric Triggers
 
 | Disruption Type | Condition |
 |----------------|----------|
@@ -116,7 +116,7 @@ GigShield provides a financial safety net for such workers.
 
 ---
 
-## 🔐 Ensuring Genuine Users (Fraud Prevention)
+## Ensuring Genuine Users (Fraud Prevention)
 
 GigShield uses a **multi-layer verification system**:
 
@@ -128,7 +128,7 @@ GigShield uses a **multi-layer verification system**:
 
 ---
 
-## ⚙️ Detailed Application Workflow
+## Detailed Application Workflow
 
 1. User Registration (OTP + basic details)  
 2. AI Risk Assessment (location + weather data)  
@@ -141,7 +141,7 @@ GigShield uses a **multi-layer verification system**:
 
 ---
 
-## 🤖 AI Integration
+## AI Integration
 
 Machine learning is used to:
 - Assess risk levels  
@@ -156,7 +156,7 @@ React.js, Tailwind CSS, Node.js, Express.js, MongoDB, Python, Scikit-learn, Weat
 
 ---
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 - Integration with delivery platforms  
 - Mobile application  
