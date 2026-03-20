@@ -1,6 +1,6 @@
 # 🛡️ GigShield – AI-Powered Parametric Insurance for Gig Delivery Workers
 
-> *"We don't ask workers to prove their loss — the data proves it."*
+> *"India's gig workers deserve better. GigShield delivers."*
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-gig--shield--six.vercel.app-orange?style=for-the-badge)](https://gig-shield-six.vercel.app/)
 [![Demo Video](https://img.shields.io/badge/Demo%20Video-YouTube-red?style=for-the-badge)](https://youtu.be/s2i6chsLJAo)
@@ -107,7 +107,69 @@ Our approach:
 
 ---
 
-## Who Is Our User, Really?
+## How GigShield Verifies Real Delivery Workers
+
+> *"Anyone can claim to be a delivery partner. Here's how we make sure they actually are."*
+
+This is the hardest problem in gig worker insurance — and most platforms ignore it. GigShield uses a **4-level progressive verification system** that gets stronger over time.
+
+---
+
+### Level 1 — Document Upload (At Registration)
+- User uploads their **Swiggy/Zomato partner ID card** or onboarding letter
+- AI-powered OCR extracts name, partner ID, and platform
+- Cross-referenced against the user's registered phone number
+- Quick to implement, acts as the first filter
+
+---
+
+### Level 2 — Movement Pattern Analysis (Ongoing)
+Real delivery workers move in a **very specific behavioral pattern** that is nearly impossible to fake consistently:
+
+| Signal | Genuine Delivery Worker | Fraudster |
+|--------|------------------------|-----------|
+| **Trip duration** | 5–15 min short trips repeatedly | Stationary or random movement |
+| **Active hours** | 11AM–2PM and 7PM–10PM clusters | Anytime, no pattern |
+| **Location clusters** | Near known restaurants & delivery zones | Random or fixed location |
+| **Speed** | Consistent with a bike (20–40 km/h) | Walking speed or zero movement |
+| **Daily GPS traces** | Hundreds of location points across the city | Few or no traces |
+
+Our AI builds a **delivery rider signature** from the first week of app usage. If a user's movement pattern matches this signature, their trust score increases automatically.
+
+---
+
+### Level 3 — UPI Payment Pattern Validation
+- User links their UPI/bank account during onboarding
+- GigShield checks for **regular small incoming payments of ₹40–₹80** — the exact per-delivery payout pattern from Swiggy/Zomato
+- This payment fingerprint is **unmistakable proof** of active delivery work
+- Cannot be faked without actually doing deliveries
+
+---
+
+### Level 4 — Platform API Integration *(Phase 2 Roadmap)*
+- Direct integration with **Swiggy and Zomato Partner APIs**
+- Pulls real-time delivery count, active hours, and verified earnings
+- **Cryptographically confirms** the user is a registered, active delivery partner
+- Eliminates the need for any manual verification entirely
+
+---
+
+### Progressive Trust — The Smart Safeguard
+
+Even without Level 3 and 4, genuine workers prove themselves naturally over time:
+
+```
+Week 1  →  New account, capped payout ₹500 (low trust)
+Week 2  →  Movement traces match delivery rider pattern → Trust Score ↑
+Week 3  →  Consistent behavior confirmed → Payout cap ₹1,500
+Week 4+ →  Full plan payout unlocked → Trusted worker
+```
+
+**A fraudster won't fake delivery movements for 3 weeks just to unlock ₹500 payouts — it's simply not worth it.** That's the real protection progressive trust provides.
+
+---
+
+##  Who Is Our User, Really?
 
 Meet **Arjun**, 24, delivery partner for Swiggy in Hyderabad.
 
@@ -121,7 +183,7 @@ Arjun doesn't have time to file a claim. He doesn't trust insurance — his cous
 
 ---
 
-## The Problem
+##  The Problem
 
 Gig delivery workers on platforms like Swiggy and Zomato depend entirely on daily active hours. Environmental disruptions directly cut their income:
 
@@ -138,7 +200,7 @@ Gig delivery workers on platforms like Swiggy and Zomato depend entirely on dail
 
 ---
 
-## Our Solution — Parametric Insurance
+##  Our Solution — Parametric Insurance
 
 Parametric insurance pays based on **a measurable event**, not a reported loss. When rainfall crosses 60mm — we pay. No receipts. No proof. No waiting.
 
@@ -149,7 +211,7 @@ AI Fraud Check → Payout Calculated → UPI Transfer (< 5 min)
 
 ---
 
-## How the AI Actually Works
+##  How the AI Actually Works
 
 GigShield uses machine learning at three critical points:
 
@@ -194,7 +256,7 @@ A binary classifier runs on every payout trigger:
 
 ---
 
-## Application Workflow
+##  Application Workflow
 
 ```
 1. Register (OTP + GPS validation)
