@@ -1,4 +1,4 @@
-# GigShield – AI-Powered Insurance for Gig Delivery Workers
+# GigShield – AI-Powered Insurance Platform for Gig Delivery Workers
 
 *"We don't ask workers to prove their loss — the data proves it."*
 
