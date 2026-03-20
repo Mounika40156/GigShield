@@ -8,7 +8,7 @@
 
 ---
 
-## 🚨 Market Crash Response — Adversarial Defense & Anti-Spoofing Strategy
+## Market Crash Response — Adversarial Defense & Anti-Spoofing Strategy
 
 > **500 delivery partners. Fake GPS. Real payouts. A coordinated fraud ring just drained a platform's liquidity pool — and yours is next.**
 
@@ -107,7 +107,7 @@ Our approach:
 
 ---
 
-## 👤 Who Is Our User, Really?
+## Who Is Our User, Really?
 
 Meet **Arjun**, 24, delivery partner for Swiggy in Hyderabad.
 
@@ -121,7 +121,7 @@ Arjun doesn't have time to file a claim. He doesn't trust insurance — his cous
 
 ---
 
-## 🔥 The Problem
+## The Problem
 
 Gig delivery workers on platforms like Swiggy and Zomato depend entirely on daily active hours. Environmental disruptions directly cut their income:
 
@@ -138,7 +138,7 @@ Gig delivery workers on platforms like Swiggy and Zomato depend entirely on dail
 
 ---
 
-## 💡 Our Solution — Parametric Insurance
+## Our Solution — Parametric Insurance
 
 Parametric insurance pays based on **a measurable event**, not a reported loss. When rainfall crosses 60mm — we pay. No receipts. No proof. No waiting.
 
@@ -149,7 +149,7 @@ AI Fraud Check → Payout Calculated → UPI Transfer (< 5 min)
 
 ---
 
-## ⚡ How the AI Actually Works
+## How the AI Actually Works
 
 GigShield uses machine learning at three critical points:
 
@@ -194,7 +194,7 @@ A binary classifier runs on every payout trigger:
 
 ---
 
-## 📋 Application Workflow
+## Application Workflow
 
 ```
 1. Register (OTP + GPS validation)
@@ -216,20 +216,20 @@ A binary classifier runs on every payout trigger:
 
 ---
 
-## 💰 Pricing & Payout Model
+## Pricing & Payout Model
 
 | Plan | Weekly Premium | Max Weekly Payout | Best For |
 |------|---------------|------------------|----------|
-| 🌱 Basic | ₹49 | ₹1,500 | Part-time workers |
-| ⚡ Standard | ₹99 | ₹3,000 | Full-time workers |
-| 👑 Premium | ₹149 | ₹5,000 | High-earning partners |
+|  Basic | ₹49 | ₹1,500 | Part-time workers |
+| Standard | ₹99 | ₹3,000 | Full-time workers |
+| Premium | ₹149 | ₹5,000 | High-earning partners |
 
 **Payout Example:**
 > Standard Plan user loses ₹400 due to 75mm rainfall → AI estimates ₹400 loss → ₹400 credited to UPI within 5 minutes
 
 ---
 
-## 🎯 Parametric Triggers
+## Parametric Triggers
 
 | Disruption | Trigger Condition | Data Source |
 |-----------|------------------|-------------|
@@ -240,7 +240,7 @@ A binary classifier runs on every payout trigger:
 
 ---
 
-## 🔒 Multi-Layer Fraud Prevention (Summary)
+## Multi-Layer Fraud Prevention (Summary)
 
 1. **OTP authentication** — verified phone number required
 2. **GPS validation** — real-time location must match registered zone
@@ -252,7 +252,7 @@ A binary classifier runs on every payout trigger:
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React.js** — Registration, dashboard, plan selection UI
@@ -277,7 +277,7 @@ A binary classifier runs on every payout trigger:
 
 ---
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 - **Platform API integration** — Verify workers directly via Swiggy/Zomato partner APIs
 - **Mobile app** — Android-first, low-data optimized for field use
@@ -287,7 +287,7 @@ A binary classifier runs on every payout trigger:
 
 ---
 
-## 👩‍💻 Team — The GameChangers
+## Team — The GameChangers
 
 | Name | ID |
 |------|----|
