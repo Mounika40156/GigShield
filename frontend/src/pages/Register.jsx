@@ -19,7 +19,14 @@ export default function Register() {
   const set = (k,v) => setForm(p=>({...p,[k]:v}));
 
   const sendOtp = () => { setLoading(true); setTimeout(()=>{ setOtpSent(true); setLoading(false); }, 1200); };
-  const verifyOtp = () => { setLoading(true); setTimeout(()=>{ setOtpVerified(true); setLoading(false); }, 900); };
+  const verifyOtp = () => {
+  if (form.otp !== '1234') {
+    alert('Invalid OTP. Use 1234 for demo.');
+    return;
+  }
+  setLoading(true);
+  setTimeout(() => { setOtpVerified(true); setLoading(false); }, 900);
+};
   const captureGps = () => {
     setLoading(true);
     if(navigator.geolocation) { navigator.geolocation.getCurrentPosition(()=>{setGpsOk(true);setLoading(false);},()=>{setGpsOk(true);setLoading(false);}); }
@@ -32,9 +39,17 @@ export default function Register() {
   };
 
   const finish = () => {
-    setUser({...form, id:`GS-${Date.now()}`, registeredAt:new Date().toISOString(), trustScore:42, riskProfile});
-    navigate('/policy');
+  const newUser = {
+    ...form,
+    id: `GS-${Date.now()}`,
+    registeredAt: new Date().toISOString(),
+    trustScore: 42,
+    riskProfile,
   };
+  localStorage.setItem('gs_user', JSON.stringify(newUser)); // ← ADD THIS
+  setUser(newUser);
+  navigate('/policy');
+};
 
   const canNext = () => {
     if(step===0) return form.name && form.phone && form.email;

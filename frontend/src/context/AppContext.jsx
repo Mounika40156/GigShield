@@ -309,7 +309,7 @@ export function AppProvider({ children }) {
   }
 
   const fetchPlatformStatus = async () => PLATFORM_STATUS.Swiggy
-  const fetchFloodAdvisory  = async () => ({ level: 'GREEN', advisory: false })
+  const fetchFloodAdvisory = async () => ({ level: 'GREEN', advisory: false, waterlogging: 'No' })
 
   const refreshAllData = async (city) => {
     const weather  = await fetchWeather(city)

@@ -107,9 +107,17 @@ export default function Claims() {
           setFraudPassed(result.passed);
 
           if (result.passed) {
-            // ✅ Fraud passed → release payout
+            const SEVERITY = {
+              'Heavy Rain (78mm)': 0.40,
+              'Heatwave (46°C)': 0.30,
+              'Severe AQI (405)': 0.25,
+              'Flood Alert': 0.60,
+              'Platform Outage': 0.50,
+            };
+            const severity = SEVERITY[trigger.name] || 0.35;
+            const dailyEarnings = parseFloat(worker.dailyEarnings) || 800;
             const amount = Math.min(
-              Math.round((parseFloat(worker.dailyEarnings) || 800) * (0.2 + Math.random() * 0.3)),
+              Math.round(dailyEarnings * severity * 1.5),
               policy.maxPayout
             );
             const c = addClaim(trigger.name, amount, false);
@@ -324,6 +332,27 @@ export default function Claims() {
                       <div key={i} style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 6, paddingBottom: row.highlight ? 0 : 6, borderBottom: row.highlight ? 'none' : '1px solid var(--border)' }}>
                         <span style={{ fontSize: 12, color: 'var(--text-2)' }}>{row.label}</span>
                         <span style={{ fontSize: 12, fontWeight: row.highlight ? 700 : 500, color: row.highlight ? 'var(--green)' : 'var(--text)' }}>{row.value}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+                {fraudPassed && latestClaim?.status === 'PAID' && (
+                  <div style={{ marginTop: 12, padding: '12px 14px', background: 'var(--green-bg)', borderRadius: 9, border: '1px solid var(--green-border)' }}>
+                    <div style={{ fontSize: 11, fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--green)', marginBottom: 8 }}>
+                      ✅ UPI Transfer Confirmed
+                    </div>
+                    {[
+                      { label: 'Transaction ID', value: `UPI${Date.now().toString().slice(-10)}` },
+                      { label: 'UPI ID',         value: `${user.phone?.slice(-10)}@upi` },
+                      { label: 'Amount',         value: `₹${latestClaim.amount}` },
+                      { label: 'Status',         value: 'SUCCESS' },
+                      { label: 'Time',           value: new Date().toLocaleTimeString('en-IN') },
+                    ].map((row, i) => (
+                      <div key={i} style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 5 }}>
+                        <span style={{ fontSize: 12, color: 'var(--text-2)' }}>{row.label}</span>
+                        <span style={{ fontSize: 12, fontWeight: 600, color: row.label === 'Status' ? 'var(--green)' : 'var(--text)', fontFamily: row.label === 'Transaction ID' ? 'monospace' : 'inherit' }}>
+                          {row.value}
+                        </span>
                       </div>
                     ))}
                   </div>

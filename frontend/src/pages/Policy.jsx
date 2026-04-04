@@ -26,15 +26,26 @@ export default function Policy() {
   if(!user){ navigate('/register'); return null; }
 
   const activate = () => {
-    setPaying(true);
-    setTimeout(()=>{
-      const plan = PLANS.find(p=>p.id===selected);
-      const premium = calculatePremium(selected, user.city, user.platform, user.dailyEarnings);
-      const start = new Date(), end = new Date(start.getTime()+7*24*60*60*1000);
-      setPolicy({ plan:selected, premium, maxPayout:plan.maxPayout, startDate:start.toISOString().split('T')[0], endDate:end.toISOString().split('T')[0], status:'ACTIVE', claimsUsed:0 });
-      setPaying(false);
-    }, 2000);
-  };
+  setPaying(true);
+  setTimeout(() => {
+    const plan = PLANS.find(p => p.id === selected);
+    const premium = calculatePremium(selected, user.city, user.platform, user.dailyEarnings);
+    const start = new Date(), end = new Date(start.getTime() + 7 * 24 * 60 * 60 * 1000);
+    const newPolicy = {
+      plan: selected,
+      premium,
+      maxPayout: plan.maxPayout,
+      startDate: start.toISOString().split('T')[0],
+      endDate: end.toISOString().split('T')[0],
+      status: 'ACTIVE',
+      claimsUsed: 0,
+    };
+    localStorage.setItem('gs_policy', JSON.stringify(newPolicy)); // ← persist it
+    setPolicy(newPolicy);
+    setPaying(false);
+    navigate('/dashboard'); // ← go to dashboard after activation
+  }, 2000);
+};
 
   const renew = () => {
     const start=new Date(), end=new Date(start.getTime()+7*24*60*60*1000);

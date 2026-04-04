@@ -18,7 +18,10 @@ export default function Login() {
   };
 
   const login = () => {
-    if (!form.otp || form.otp.length < 4) { setError('Enter the 4-digit OTP sent to your number.'); return; }
+    if (!form.otp || form.otp !== '1234') { 
+    setError('Invalid OTP. Use 1234 for demo.'); 
+    return; 
+  }
     setLoading(true);
 
     // Check localStorage for a registered user matching this phone

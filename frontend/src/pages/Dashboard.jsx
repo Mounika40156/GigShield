@@ -4,16 +4,6 @@ import { useApp } from '../context/AppContext';
 import { AreaChart, Area, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import Sidebar from '../components/Sidebar';
 
-const earningsData = [
-  { day: 'Mon', actual: 920,  protected: 920  },
-  { day: 'Tue', actual: 850,  protected: 850  },
-  { day: 'Wed', actual: 120,  protected: 460  },
-  { day: 'Thu', actual: 980,  protected: 980  },
-  { day: 'Fri', actual: 1100, protected: 1100 },
-  { day: 'Sat', actual: 200,  protected: 680  },
-  { day: 'Sun', actual: 750,  protected: 750  },
-];
-
 const CT = ({ active, payload, label }) => {
   if (!active || !payload?.length) return null;
   return (
@@ -56,6 +46,16 @@ export default function Dashboard() {
 
   // BCR Calculation
   const { bcr, totalPremium, totalClaims } = getBCR();
+  const days = ['Mon','Tue','Wed','Thu','Fri','Sat','Sun'];
+  const earningsData = days.map((day, i) => {
+  const claim = claims.find(c => {
+    const d = new Date(c.date);
+    return d.getDay() === (i + 1) % 7 && c.status === 'PAID';
+  });
+  const base = parseFloat(user?.dailyEarnings) || 800;
+  const actual = claim ? Math.max(base - claim.amount, base * 0.15) : base;
+  return { day, actual: Math.round(actual), protected: Math.round(base) };
+});
   const bcrNum     = parseFloat(bcr);
   const bcrHealthy = bcrNum <= 0.70;
   const bcrColor   = bcrNum <= 0.55 ? 'var(--green)' : bcrNum <= 0.70 ? 'var(--yellow)' : 'var(--red)';
@@ -298,7 +298,9 @@ export default function Dashboard() {
             <table>
               <thead><tr><th>Claim ID</th><th>Date</th><th>Trigger</th><th>Amount</th><th>Channel</th><th>Auto?</th><th>Status</th></tr></thead>
               <tbody>
-                {claims.slice(0, 5).map(c => (
+                {claims.length === 0 ? (
+                <tr><td colSpan={7} style={{ textAlign: 'center', color: 'var(--text-3)', padding: '24px 0' }}>No claims yet — simulate one on the Claims page</td></tr>
+                ) : claims.slice(0, 5).map(c => (
                   <tr key={c.id}>
                     <td style={{ fontFamily: 'monospace', fontSize: 12, color: 'var(--brand)' }}>{c.id}</td>
                     <td className="text-2">{c.date}</td>
