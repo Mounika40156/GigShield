@@ -25,16 +25,17 @@ const ICONS = {
 export default function Sidebar() {
   const navigate = useNavigate();
   const location = useLocation();
-  const { user, policy, logout } = useApp();
+  const { user, policy, logout, theme, setTheme } = useApp();
+
   return (
     <div className="sidebar">
       <div className="sidebar-logo">
         <div className="sidebar-logo-mark">🛡️</div>
         <div>
           <div className="sidebar-logo-name">GigShield</div>
-    
         </div>
       </div>
+
       {user && (
         <div className="sidebar-worker">
           <div className="flex items-center gap-8 mb-8">
@@ -51,12 +52,17 @@ export default function Sidebar() {
             : <span className="badge badge-yellow" style={{fontSize:10}}>No Policy Yet</span>}
         </div>
       )}
+
       <nav className="sidebar-nav">
         {NAV.map(section => (
           <div key={section.group}>
             <div className="sidebar-section-label">{section.group}</div>
             {section.items.map(item => (
-              <button key={item.path} className={`nav-item ${location.pathname===item.path?'active':''}`} onClick={()=>navigate(item.path)}>
+              <button
+                key={item.path}
+                className={`nav-item ${location.pathname === item.path ? 'active' : ''}`}
+                onClick={() => navigate(item.path)}
+              >
                 <span className="nav-icon">{ICONS[item.path]}</span>
                 {item.label}
               </button>
@@ -64,7 +70,16 @@ export default function Sidebar() {
           </div>
         ))}
       </nav>
+
       <div className="sidebar-bottom">
+        <button
+          className="nav-item"
+          onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+        >
+          <span className="nav-icon">{theme === 'light' ? '🌙' : '☀️'}</span>
+          {theme === 'light' ? 'Dark Mode' : 'Light Mode'}
+        </button>
+
         <button className="nav-item" onClick={logout} style={{color:'var(--red)'}}>
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 2H3a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3M11 11l3-3-3-3M14 8H6"/></svg>
           Sign Out

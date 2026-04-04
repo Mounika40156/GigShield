@@ -70,6 +70,9 @@ export function AppProvider({ children }) {
       return []
     }
   })
+  const [theme, setTheme] = useState(() => {
+  return localStorage.getItem('gs_theme') || 'light';
+});
 
   const [weatherData, setWeatherData] = useState(null)
   const [platformData, setPlatformData] = useState(null)
@@ -100,6 +103,10 @@ export function AppProvider({ children }) {
   useEffect(() => {
     localStorage.setItem('gs_claims', JSON.stringify(claims))
   }, [claims])
+  useEffect(() => {
+  document.body.setAttribute('data-theme', theme);
+  localStorage.setItem('gs_theme', theme);
+}, [theme]);
 
   // ---------------- LOGIC FUNCTIONS ----------------
 
@@ -209,6 +216,8 @@ export function AppProvider({ children }) {
         fetchWeather,
         refreshAllData,
         logout,
+        theme,
+  setTheme,
       }}
     >
       {children}

@@ -1,8 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useApp } from '../context/AppContext';
 
 export default function Home() {
   const navigate = useNavigate();
+  const { theme, setTheme } = useApp();
 
   return (
     <div className="home-page">
@@ -14,7 +16,14 @@ export default function Home() {
             <span className="auth-logo-name">GigShield</span>
             <span className="badge badge-blue" style={{ fontSize: 10 }}>AI-Powered</span>
           </div>
-          <div className="flex gap-8">
+          <div className="flex gap-8" style={{ alignItems: 'center' }}>
+            <button
+              className="btn-theme-toggle"
+              onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+              title="Toggle theme"
+            >
+              {theme === 'light' ? '🌙' : '☀️'}
+            </button>
             <button className="btn btn-ghost btn-sm" onClick={() => navigate('/login')}>
               Login
             </button>
@@ -130,7 +139,7 @@ export default function Home() {
             { step: '02', icon: '📋', title: 'Choose a Plan', desc: 'Pick Basic, Standard, or Premium coverage based on your earnings and risk.' },
             { step: '03', icon: '✅', title: 'Get Covered', desc: 'Your policy activates instantly. We start monitoring weather in your zone.' },
             { step: '04', icon: '💰', title: 'Get Paid', desc: 'When a trigger happens, your payout lands in your account — no action needed.' },
-          ].map((s, i) => (
+          ].map((s) => (
             <div key={s.step} className="home-step">
               <div className="home-step-num">{s.icon}</div>
               <div style={{ fontFamily: 'Plus Jakarta Sans, sans-serif', fontWeight: 700, fontSize: 14, marginBottom: 6 }}>{s.title}</div>
@@ -242,7 +251,7 @@ export default function Home() {
 
         .home-nav {
           position: sticky; top: 0; z-index: 100;
-          background: rgba(248,250,252,0.9);
+          background: var(--home-nav-bg);
           backdrop-filter: blur(10px);
           border-bottom: 1px solid var(--border);
           padding: 14px 0;
