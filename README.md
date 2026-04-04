@@ -1,10 +1,53 @@
-# 🛡️ GigShield – AI-Powered Parametric Insurance for Gig Delivery Workers
+# 🛡️ GigShield – AI-Powered Parametric Insurance Platform for Gig Delivery Workers
 
 > *"India's gig workers deserve better. GigShield delivers."*
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-gig--shield--six.vercel.app-orange?style=for-the-badge)](https://gig-shield-six.vercel.app/)
 [![Demo Video](https://img.shields.io/badge/Demo%20Video-YouTube-red?style=for-the-badge)](https://youtu.be/s2i6chsLJAo)
 [![GitHub](https://img.shields.io/badge/GitHub-GigShield-black?style=for-the-badge)](https://github.com/Mounika40156/GigShield)
+
+---
+
+## 🚀 Phase 2 Update — Automation & Protection (April 4, 2026)
+
+### What's Built in Phase 2
+
+#### Registration Process
+- 4-step onboarding: Personal Info → Work Details → Verification → AI Risk Profile
+- OTP phone verification + real-time GPS zone capture + Partner ID upload
+- AI risk assessment runs at registration — assigns LOW / MEDIUM / HIGH risk tier
+
+#### Insurance Policy Management
+- 3 weekly plans: Basic (₹49), Standard (₹99), Premium (₹149)
+- AI-adjusted pricing based on city risk multiplier + platform risk factor
+- Policy persisted across sessions — weekly renewal with one click
+- Instant activation with Razorpay mock payment flow
+
+#### Dynamic Premium Calculation
+- XGBoost-inspired rule engine with 6 feature weights:
+  City Rain Risk (35%), Heat Index (20%), AQI History (15%),
+  Platform Risk (15%), Earnings Level (10%), Trust Score (5%)
+- Real-time recalculation as user changes city/platform/plan
+- Historical disruption chart (8 months IMD data) shown per city
+
+#### Claims Management — Zero Touch Flow
+- 5 parametric triggers monitored: Heavy Rain, Heatwave, Severe AQI, Flood Alert, Platform Outage
+- One-click simulate → 5-layer AI fraud check animates in real time
+- Payout formula: `Daily Earnings × Severity % × 1.5 duration factor`
+- Severity by trigger: Rain=40%, Outage=50%, Flood=60%, Heat=30%, AQI=25%
+- UPI payout receipt generated with Transaction ID within 3 seconds
+
+#### Fraud Detection — 5 Layers
+1. GPS Signal Validation — location vs registered zone
+2. Platform Login Check — was worker active on trigger day?
+3. Device Fingerprint Check — one account per device
+4. Behavioral Baseline Match — trust score threshold
+5. Trust Score Evaluation — final gate before payout release
+
+#### Live Demo
+- **URL:** https://gig-shield-six.vercel.app
+- **Test OTP:** `1234`
+- **Demo workers:** Ravi Kumar (clean), Priya Sharma (fraud), Arjun Patel (suspicious)
 
 ---
 
