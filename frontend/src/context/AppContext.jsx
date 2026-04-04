@@ -102,6 +102,22 @@ const WEATHER_MOCK = {
 // ---------------- PROVIDER ----------------
 
 export function AppProvider({ children }) {
+  const [theme, setThemeState] = useState(() => {
+    return localStorage.getItem('gs_theme') || 'light'
+  })
+
+  // Apply theme to <body> tag — CSS uses body[data-theme='dark']
+  useEffect(() => {
+    document.body.setAttribute('data-theme', theme)
+    localStorage.setItem('gs_theme', theme)
+  }, [theme])
+
+  const setTheme = (t) => {
+    setThemeState(t)
+    document.body.setAttribute('data-theme', t)
+    localStorage.setItem('gs_theme', t)
+  }
+
   const [user, setUser] = useState(() => {
     try { return JSON.parse(localStorage.getItem('gs_user')) || null } catch { return null }
   })
@@ -323,6 +339,9 @@ export function AppProvider({ children }) {
   return (
     <AppContext.Provider
       value={{
+        // Theme
+        theme, setTheme,
+
         // State
         user, setUser,
         policy, setPolicy,
